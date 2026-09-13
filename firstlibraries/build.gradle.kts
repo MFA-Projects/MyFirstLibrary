@@ -1,5 +1,5 @@
 group = "com.github.MFA-Projects"
-
+version = providers.gradleProperty("version").orElse("unspecified").get()
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.compose)
